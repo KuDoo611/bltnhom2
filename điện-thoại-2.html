@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Táo Store - Sản phẩm nhà táo giá rẻ</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+
+}
+
+header {
+    width: 100%;
+    height: 230px;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    margin-top: auto;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li,
+a {
+    color: whitesmoke;
+    font-size: 19px;
+}
+
+nav ul li:nth-child(2):hover a {
+    color: red;
+}
+
+nav ul li:nth-child(2) i {
+    color: whitesmoke;
+    font-size: 17px;
+    margin-left: 6px;
+}
+
+nav ul li:nth-child(3) {
+    position: relative;
+}
+
+nav ul li:nth-child(3) input {
+    height: 30px;
+    width: 100%;
+    border-radius: 9px;
+    border: none;
+    padding-left: 5px;
+    outline: none;
+}
+
+nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 19px;
+    right: 12px;
+    color: black;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+nav ul li:nth-child(4) button {
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(4) button i {
+    margin-right: 9px;
+}
+
+nav ul li:nth-child(4) button:hover {
+    background-color: rgb(224, 53, 110);
+}
+
+nav ul li:nth-child(5):hover a {
+    color: rgb(224, 53, 110);
+}
+
+nav ul li:nth-child(6) button {
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(6) button i {
+    margin-right: 9px;
+}
+
+nav ul li:nth-child(6) button:hover {
+    background-color: rgb(224, 53, 110);
+}
+
+nav ul li:nth-child(7) button {
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(7) button i {
+    margin-right: 9px;
+}
+
+nav ul li:nth-child(7) button:hover {
+    background-color: rgb(224, 53, 110);
+}
+
+/*---------------------main.menu---------*/
+.main-menu {
+    background-color: rgb(23, 22, 22);
+    padding: 13px 0;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-menu ul li a {
+    color: rgb(240, 248, 255);
+    font-size: 19px;
+    list-style: none;
+    float: left;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-menu ul li a i {
+    margin-right: 6px;
+    font-size: 19px;
+}
+
+.main-menu ul li a:hover {
+    color: rgb(224, 53, 110);
+    border-bottom: 2px solid;
+}
+.loc{  
+    padding-left: 4%;
+}
+           h2{ color: red;}
+ td button {
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+
+td button:hover {
+    background-color: rgb(224, 53, 110);
+}
+      
+#footer {
+    width: 100%;
+    background: black;
+    height: 322px;
+    margin-top: 338px;
+    padding: 0px 63px;
+    padding-top: 57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color: #fff;
+}
+
+#footer.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+#footer .social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#footer.social-media a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer .box #footer .box form input {
+    width: 294px;
+    height: 42px;
+    background: transparent;
+    padding-left: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+#footer .box form button {
+    background: #362f2f;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0.25);
+    width: 163px;
+    height: 38px;
+    margin-top: 29px;
+    color: #fff;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img style="width: 100%;height:230px;"
+            src="https://iphonechauduc.com/wp-content/uploads/2020/08/hinh-anh-banner-dien-may-thong-minh_033705387.png"
+            class="logo">
+    </header>
+    <nav>
+        <div class="container">>
+            <ul>
+                <li><a href=""><img style="width: 120px;"
+                            src="http://4.bp.blogspot.com/_zmoEeqomXD4/Svk8CbKrmHI/AAAAAAAADhA/7CPol_OQqvQ/s400/iPhone-logo.gif"
+                            class="logo"></a></li>
+                <li><a href="">Hà Nội<i class="fa-solid fa-angle-down"></i></a></li>
+                <li><input type="text" placeholder="  Tìm kiếm......."><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a></li>
+                <li><a href="">Lịch sử đơn hàng</a></li>
+                <li><a href=""><button class="btn">Đăng nhập</button></a></li>
+                <li><a href=""><button class="btn">Đăng ký</button></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main-menu">
+        <div class="container">
+            <div class="main-menu-content">
+                <ul>
+                    <li><a href="trang điện thoại.html"><i class="fa-solid fa-mobile-screen-button"></i>Điện thoại</i></a></li>
+                    <li><a href=""><i class="fa-solid fa-laptop"></i> Mapbook</a></li>
+                    <li><a href=""><i class="fa-solid fa-tablet"></i> Table</a></li>
+                    <li><a href=""><i class="fa-solid fa-headphones"></i> Airpods</a></li>
+                    <li><a href=""><i class='bx bxs-watch-alt'></i> Apple Watch</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+		<table>
+    <th><a href="trang điện thoại.html">
+        <img src="https://lookagain.scene7.com/is/image/OttoUK/355w/iPhone-14-Plus-256GB-Blue-by-Apple~33J894FRSP.jpg"width="350" height="350"></a></th>       
+            <td style="vertical-align:top;" >
+                <div class="loc">
+        <h1>iPhone 14 Plus 256GB Blue </h1>
+        
+                <h2> Giá:24.490.600 VNĐ</h2>
+            
+                Màn hình Dynamic Island - Sự biến mất của màn hình tai thỏ thay thế bằng thiết kế viên thuốc, OLED 6,7 inch, hỗ trợ always-on display<br>
+                Cấu hình iPhone 14 Plus  mạnh mẽ, hiệu năng cực khủng từ chipset A16 Bionic<br>
+                Làm chủ công nghệ nhiếp ảnh - Camera sau 48MP, cảm biến TOF sống động<br>
+                Pin liền lithium-ion kết hợp cùng công nghệ sạc nhanh cải tiến.<br>
+        
+       Số lượng
+        <input type="">
+        <button>Mua ngay</button>
+    </div>
+    </td>
+        </table>
+    <div id="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="http://4.bp.blogspot.com/_zmoEeqomXD4/Svk8CbKrmHI/AAAAAAAADhA/7CPol_OQqvQ/s400/iPhone-logo.gif"
+                    width="150" height="150" alt="">
+            </div>
+            <footer>
+            <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        </div>
+        <div class="box">
+            <h3>LIÊN HỆ</h3>
+            <div class="social-media">
+
+                <a style="color: aliceblue;" href="https://www.facebook.com/"><ion-icon style="font-size: 50px;"
+                        name="logo-facebook"></ion-icon></a>
+
+                <a style="color: aliceblue;" href="https://www.tiktok.com/"> <ion-icon style="font-size: 50px;"
+                        name="logo-tiktok"></ion-icon></a>
+
+                <a style="color: aliceblue;" href="https://www.youtube.com/"><ion-icon style="font-size: 50px;"
+                        name="logo-youtube"></ion-icon></a>
+                <p>Số điện thoại:0827285JQK</p>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Phản Hồi</h3>
+            <form action="">
+                <input type="text" placeholder="Nhập tin ">
+                <button>Xác nhận</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

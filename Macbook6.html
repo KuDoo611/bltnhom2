@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Táo Store - Sản phẩm nhà táo giá rẻ</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+
+}
+
+header {
+    width: 100%;
+    height: 230px;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    margin-top: auto;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li,
+a {
+    color: whitesmoke;
+    font-size: 19px;
+}
+
+nav ul li:nth-child(2):hover a {
+    color: red;
+}
+
+nav ul li:nth-child(2) i {
+    color: whitesmoke;
+    font-size: 17px;
+    margin-left: 6px;
+}
+
+nav ul li:nth-child(3) {
+    position: relative;
+}
+
+nav ul li:nth-child(3) input {
+    height: 30px;
+    width: 100%;
+    border-radius: 9px;
+    border: none;
+    padding-left: 5px;
+    outline: none;
+}
+
+nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 19px;
+    right: 12px;
+    color: black;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+nav ul li:nth-child(4) button {
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(4) button i {
+    margin-right: 9px;
+}
+
+nav ul li:nth-child(4) button:hover {
+    background-color: rgb(224, 53, 110);
+}
+
+nav ul li:nth-child(5):hover a {
+    color: rgb(224, 53, 110);
+}
+
+nav ul li:nth-child(6) button {
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(6) button i {
+    margin-right: 9px;
+}
+
+nav ul li:nth-child(6) button:hover {
+    background-color: rgb(224, 53, 110);
+}
+
+nav ul li:nth-child(7) button {
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(7) button i {
+    margin-right: 9px;
+}
+
+nav ul li:nth-child(7) button:hover {
+    background-color: rgb(224, 53, 110);
+}
+
+/*---------------------main.menu---------*/
+.main-menu {
+    background-color: rgb(23, 22, 22);
+    padding: 13px 0;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-menu ul li a {
+    color: rgb(240, 248, 255);
+    font-size: 19px;
+    list-style: none;
+    float: left;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-menu ul li a i {
+    margin-right: 6px;
+    font-size: 19px;
+}
+
+.main-menu ul li a:hover {
+    color: rgb(224, 53, 110);
+    border-bottom: 2px solid;
+}
+.loc{  
+    padding-left: 4%;
+}
+           h2{ color: red;}
+ td button {
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+
+td button:hover {
+    background-color: rgb(224, 53, 110);
+}
+      
+#footer {
+    width: 100%;
+    background: black;
+    height: 322px;
+    margin-top: 338px;
+    padding: 0px 63px;
+    padding-top: 57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color: #fff;
+}
+
+#footer.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+#footer .social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#footer.social-media a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer .box #footer .box form input {
+    width: 294px;
+    height: 42px;
+    background: transparent;
+    padding-left: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+#footer .box form button {
+    background: #362f2f;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0.25);
+    width: 163px;
+    height: 38px;
+    margin-top: 29px;
+    color: #fff;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img style="width: 100%;height:230px;"
+            src="https://iphonechauduc.com/wp-content/uploads/2020/08/hinh-anh-banner-dien-may-thong-minh_033705387.png"
+            class="logo">
+    </header>
+    <nav>
+        <div class="container">>
+            <ul>
+                <li><a href=""><img style="width: 120px;"
+                            src="http://4.bp.blogspot.com/_zmoEeqomXD4/Svk8CbKrmHI/AAAAAAAADhA/7CPol_OQqvQ/s400/iPhone-logo.gif"
+                            class="logo"></a></li>
+                <li><a href="">Hà Nội<i class="fa-solid fa-angle-down"></i></a></li>
+                <li><input type="text" placeholder="  Tìm kiếm......."><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a></li>
+                <li><a href="">Lịch sử đơn hàng</a></li>
+                <li><a href=""><button class="btn">Đăng nhập</button></a></li>
+                <li><a href=""><button class="btn">Đăng ký</button></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main-menu">
+        <div class="container">
+            <div class="main-menu-content">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-mobile-screen-button"></i>Điện thoại</i></a></li>
+                    <li><a href="trangMacbook.html"><i class="fa-solid fa-laptop"></i> Mapbook</a></li>
+                    <li><a href=""><i class="fa-solid fa-tablet"></i> Table</a></li>
+                    <li><a href=""><i class="fa-solid fa-headphones"></i> Airpods</a></li>
+                    <li><a href=""><i class='bx bxs-watch-alt'></i> Apple Watch</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+		<table>
+    <th><a href="trangMacbook.html">
+        <img src="https://m.media-amazon.com/images/I/91X8jfRJxoL._AC_SX466_.jpg"width="350" height="250"></a></th>       
+            <td style="vertical-align:top;" >
+                <div class="loc">
+        <h1>Máy tính xách tay màn hình cảm ứng 15,6'' HD mới nhất của HP 2022, Intel i5-1135G7 lõi tứ (Beat i7-1065G7,Tối đa 4,2 GHz), Đồ họa Iris Xe, RAM 16 GB, SSD 512 GB, Webcam HD, WiFi, Pin hơn 11 giờ, Win11 S,</h1>
+        
+                <h2> Giá:14.764.000 VNĐ</h2>
+            
+                -Nâng cấp lên 16GB RAM + 512GB PCIe SSD Nguyên Seal được mở ra CHỈ để nâng cấp đạt thông số kỹ thuật như quảng cáo. Được nâng cấp lên RAM 16GB băng thông cao đáng kể, cho phép bạn chạy mượt mà các trò chơi và ứng dụng chỉnh sửa ảnh và video, cũng như nhiều chương trình và tab trình duyệt cùng một lúc. Có được hiệu suất nhanh hơn tới 15 lần so với ổ cứng truyền thống với 512GB dung lượng lưu trữ Ổ cứng thể rắn PCIe NVMe M.2<br>
+                -Màn hình cảm ứng 15,6” HD Đường chéo 15,6'', HD (1366 x 768), cảm ứng, viền siêu nhỏ, BrightView. Hầu như không có viền bao quanh màn hình, trải nghiệm xem siêu rộng mang đến khả năng thiết lập nhiều màn hình liền mạch. Camera trước HD 720p. Các phụ kiện của Marxsol bao gồm Cáp HDMI, dây mở rộng USB và Bàn di chuột dành cho Gia đình, Sinh viên, Chuyên gia, Doanh nghiệp Nhỏ, Giáo dục Trường học và Doanh nghiệp Thương mại, Lớp học Trực tuyến, Lớp học Google, Học từ xa, Sẵn sàng thu phóng<br>
+                -Intel Core i5-1135G7 Intel Core i5-1135G7 (lên đến 4,2 GHz với Công nghệ Intel Turbo Boost, Bộ nhớ đệm thông minh Intel 8 MB, 4 nhân, 8 luồng). Mang đến sự kết hợp hoàn hảo của các tính năng để khiến bạn không thể ngăn cản. Hoàn thành công việc nhanh chóng với hiệu suất cao, khả năng phản hồi tức thì và khả năng kết nối tốt nhất trong phân khúc<br>
+                -Windows 11 Home inmode Windows 11 inmode là phiên bản Windows 11 được sắp xếp hợp lý để bảo mật và hiệu suất, đồng thời cung cấp trải nghiệm Windows quen thuộc. (Bạn có thể DỄ DÀNG chuyển sang Windows 11 thông thường: Nhấn ''Nút bắt đầu'' ở dưới cùng bên trái của màn hình; Chọn biểu tượng ''Cài đặt'' phía trên biểu tượng ''nguồn''; Chọn Cập nhật & Bảo mật và Kích hoạt, sau đó Chuyển đến Cửa hàng; Chọn tùy chọn ''Nhận'' trong ''Tắt chế độ''; Nhấn Cài đặt.)<br>
+                -Được ủy quyền w/MarxsolBundle / 1x Giắc cắm kết hợp tai nghe/micrô / 1x chân cắm thông minh AC; Kết hợp Wi-Fi và Bluetooth (2x2); Tích hợp Webcam 720p; Bạc tự nhiên + w/MarxsolCablePhụ kiện đi kèm<br>
+        
+       Số lượng
+        <input type="">
+        <button>Mua ngay</button>
+    </div>
+    </td>
+        </table>
+    <div id="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="http://4.bp.blogspot.com/_zmoEeqomXD4/Svk8CbKrmHI/AAAAAAAADhA/7CPol_OQqvQ/s400/iPhone-logo.gif"
+                    width="150" height="150" alt="">
+            </div>
+            <footer>
+            <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        </div>
+        <div class="box">
+            <h3>LIÊN HỆ</h3>
+            <div class="social-media">
+
+                <a style="color: aliceblue;" href="https://www.facebook.com/"><ion-icon style="font-size: 50px;"
+                        name="logo-facebook"></ion-icon></a>
+
+                <a style="color: aliceblue;" href="https://www.tiktok.com/"> <ion-icon style="font-size: 50px;"
+                        name="logo-tiktok"></ion-icon></a>
+
+                <a style="color: aliceblue;" href="https://www.youtube.com/"><ion-icon style="font-size: 50px;"
+                        name="logo-youtube"></ion-icon></a>
+                <p>Số điện thoại:0827285JQK</p>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Phản Hồi</h3>
+            <form action="">
+                <input type="text" placeholder="Nhập tin ">
+                <button>Xác nhận</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
